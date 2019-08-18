@@ -17,7 +17,7 @@ class Barang_controller extends CI_Controller
 
     function index()
     {
-        $this->load->view('templates/header');
+        $this->load->view('templates/header1');
         $this->load->database();
         $jumlah_data = $this->barang_model->jumlah_data();
         $this->load->library('pagination');
@@ -33,7 +33,7 @@ class Barang_controller extends CI_Controller
 
     function barang_input()
     {
-        $this->load->view('templates/header');
+        $this->load->view('templates/header1');
         $this->load->view('barang_input');
         $this->load->view('templates/footer');
     }
@@ -76,7 +76,7 @@ class Barang_controller extends CI_Controller
 
     function barang_edit($id)
     {
-        $this->load->view('templates/header');
+        $this->load->view('templates/header1');
         $where = array('id' => $id);
         $data['barang'] = $this->barang_model->edit_data($where, 'barang')->result();
         $this->load->view('barang_edit', $data);

@@ -7,7 +7,7 @@
 
 <body>
     <center>
-        <h4>Silahkan Login Terlebih Dahulu</h4>
+        <h4>Coming Soon</h4>
     </center>
 </body>
 

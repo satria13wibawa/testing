@@ -38,9 +38,6 @@
 		echo $this->pagination->create_links();
 		?>
 	</center>
-	<center>
-		<?php echo anchor('barang_controller/logout/', 'Logout'); ?>
-	</center>
 </body>
 
 </html>
