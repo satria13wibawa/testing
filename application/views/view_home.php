@@ -6,19 +6,13 @@
 </head>
 
 <body>
-    <center>
-        <form action="<?php echo base_url('home/klik'); ?>" method="post">
-            <table>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Login"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Data"></td>
-                </tr>
-            </table>
-    </center>
+    <div class="row mt-4">
+        <div class="col-md-7">
+            <center>
+                <h1>Selamat Datang!!</h1>
+            </center>
+        </div>
+    </div>
 </body>
 
 </html>

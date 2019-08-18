@@ -17,6 +17,7 @@ class Barang_controller extends CI_Controller
 
     function index()
     {
+        $this->load->view('templates/header');
         $this->load->database();
         $jumlah_data = $this->barang_model->jumlah_data();
         $this->load->library('pagination');
@@ -27,11 +28,14 @@ class Barang_controller extends CI_Controller
         $this->pagination->initialize($config);
         $data['barang'] = $this->barang_model->data($config['per_page'], $from);
         $this->load->view('barang_index', $data);
+        $this->load->view('templates/footer');
     }
 
     function barang_input()
     {
+        $this->load->view('templates/header');
         $this->load->view('barang_input');
+        $this->load->view('templates/footer');
     }
 
     function aksi()
@@ -40,6 +44,7 @@ class Barang_controller extends CI_Controller
         $this->form_validation->set_rules('jumlah', 'Jumlah', 'required|trim|numeric');
 
         if ($this->form_validation->run() != false) {
+
             $nama = $this->input->post('nama_barang');
             $jumlah = $this->input->post('jumlah');
 
@@ -71,9 +76,11 @@ class Barang_controller extends CI_Controller
 
     function barang_edit($id)
     {
+        $this->load->view('templates/header');
         $where = array('id' => $id);
         $data['barang'] = $this->barang_model->edit_data($where, 'barang')->result();
         $this->load->view('barang_edit', $data);
+        $this->load->view('templates/footer');
     }
 
     function update()

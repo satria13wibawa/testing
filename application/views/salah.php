@@ -7,8 +7,7 @@
 
 <body>
     <center>
-        <h4>Username atau password salah</h4>
-        <?php echo anchor('login/logout/', 'Login Ulang'); ?>
+        <h4>Silahkan Login Terlebih Dahulu</h4>
     </center>
 </body>
 

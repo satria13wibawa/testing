@@ -11,7 +11,9 @@ class Login extends CI_Controller
 
     function index()
     {
+        $this->load->view('templates/header');
         $this->load->view('login_view');
+        $this->load->view('templates/footer');
     }
 
     function aksi_login()
@@ -34,7 +36,7 @@ class Login extends CI_Controller
 
             redirect(base_url("barang_controller"));
         } else {
-            $this->load->view('salah');
+            $this->load->view('login_view');
         }
     }
 

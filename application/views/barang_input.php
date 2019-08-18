@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Testing</title>
+    <title>Tambah Data</title>
 </head>
 
 <body>
@@ -25,6 +25,9 @@
             <td><input type="submit" value="Tambah"></td>
         </tr>
     </table>
+    <center>
+        <a class="nav-item nav-link" href="<?= base_url("barang_controller/index"); ?>">Kembali</a>
+    </center>
     </form>
 </body>
 

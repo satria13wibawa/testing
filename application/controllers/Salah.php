@@ -1,6 +1,6 @@
 <?php
 
-class Home extends CI_Controller
+class Salah extends CI_Controller
 {
 
     function __construct()
@@ -12,7 +12,7 @@ class Home extends CI_Controller
     function index()
     {
         $this->load->view('templates/header');
-        $this->load->view('view_home');
+        $this->load->view('salah');
         $this->load->view('templates/footer');
     }
 
